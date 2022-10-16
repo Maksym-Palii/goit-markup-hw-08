@@ -1,0 +1,23 @@
+@import "./utils/variables";
+@import "./utils/breakpoints";
+@import "./utils/basic-styles";
+
+@import "./components/logo";
+@import "./components/section";
+@import "./components/container";
+@import "./components/hidden";
+@import "./components/title";
+@import "./components/btn";
+@import "./components/socialicon";
+@import "./components/socialtext";
+
+@import "./layouts/page-header";
+@import "./layouts/mobile-menu";
+@import "./layouts/section-hero";
+@import "./layouts/our-advantages";
+@import "./layouts/our-work";
+@import "./layouts/our-team";
+@import "./layouts/clients";
+@import "./layouts/page-footer";
+@import "./layouts/modal";
+@import "./layouts/portfolio";

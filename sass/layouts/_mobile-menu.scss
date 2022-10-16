@@ -1,0 +1,57 @@
+// Кнопка мобільного меню
+.menu-button {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 15px;
+
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+
+    &:focus {
+        color: var(--hover-main);
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.menu-button__icon {
+    fill: currentColor;
+}
+
+.icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-container {   
+    @media screen and (max-width: calc($tablet - 1px)) {
+        display: none;
+        
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh;
+        
+        padding: 48px 40px;
+        background-color: var(--background-color-card);
+
+        &.is-open {
+            display: block;
+        }
+    }   
+}
